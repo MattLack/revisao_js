@@ -6,20 +6,24 @@
 
     </head>
 
+    
+
     <body>
-        <div id="display">
-            
-        </div>
+        <div id="display"></div>
 
         <div id="campos">
+            
             Nome: <input type = "text" id="txtNome" value=""/>
             <input type="button" value="+" onclick="novoContato()">
-            <input type="button" value="OK" onclick="exibeNome()">
-           
-            <div id="listaContatos">
+            <input type="button" value="OK" onclick="imprimirDados()"/>
             
-            </div>
+            <form name="frmContatos">
+                <div id="listaContatos"></div>
+            </form>
 
+            <div id="saidaContatos">
+            </div>
+            
         </div>
     </body>
 

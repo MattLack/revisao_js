@@ -1,0 +1,34 @@
+<html>
+
+    <head>
+
+
+    </head>
+
+    <body>
+
+        <div id="saida">
+        </div>
+
+    </body>
+
+      <script>
+
+            function pessoa(nome,idade){
+                this.nome = nome;
+                this.idade = idade;
+                this.dizerTchau = function(){
+                    window.alert("Tchau");
+                }
+            }
+
+            pessoa.prototype.dizerOi = function(){ window.alert("oi") };
+            var p1 = new pessoa("Mateus",20);
+            console.log(p1.nome);
+            console.log(p1.idade);
+            p1.dizerOi();
+            p1.dizerTchau();
+
+        </script>
+
+</html>    

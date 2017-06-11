@@ -1,0 +1,50 @@
+<html>
+
+    <head>
+
+
+    </head>
+
+    <body>
+        <div id="saida">
+        </div>
+
+    </body>
+
+      <script>
+            // o script foi colocado embaixo porque ele tenta acessar previamente o body sem ele ser construido
+            var pessoa = {
+                Nome: "Mateus",
+                Idade: 20,
+                //function também é um objeto
+                //dizerOla:function(){
+                //    window.alert('Ola');
+                //}
+               // dizerAlgo: function(mensagem){
+               //     window.alert(mensagem);
+              //  }
+              dizerAlgo: function(mensagem,saida){
+                  saida(mensagem);
+
+              }
+
+             };
+
+             console.log(pessoa.Nome);
+             console.log(pessoa.Idade);
+             //pessoa.dizerOla();
+             //pessoa.dizerAlgo("Olá do parametro");
+             //callback
+             pessoa.dizerAlgo("Olá do parametro DIV",function(msg){ 
+                 var divSaida = document.getElementById("saida");
+                 divSaida.innerHTML = msg;
+              });//saida em div
+             
+             pessoa.dizerAlgo("Olá do parametro ALERTA",function(msg){ window.alert(msg) });//saida em alert
+             pessoa.dizerAlgo("Olá do parametro Console", function(msg){
+                 console.log(msg);
+             });//saida em console
+
+        </script>
+
+</html>    
