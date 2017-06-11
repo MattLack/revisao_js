@@ -1,0 +1,57 @@
+<html>
+<!--
+    Aluno: Anderson Mateus
+-->
+
+<head>
+    <meta charset="utf-8" />
+    <script src="atv2.js"></script>
+    
+    <style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+
+</head>
+
+<body>
+    <h1><b>Exemplo de Manipulação de Array e Objetos em JavaScript</b></h1>
+
+    <form name="cadastro" enctype="value">
+        <fieldset>
+            <legend>Manutenção de Funcionários</legend>
+            <br>
+            Por favor, preencha os dados abaixo:
+            <br></br>
+            CPF: <input type="text" name="Icpf">
+            Nome: <input type="text" name="Inome">
+            Cargo: <input type="text" name="Icargo">
+            Salário: <input type="number" name="Isalario">
+            <input type="button" value="Adicionar" onclick="inserir()">
+        </fieldset>
+
+    <h2><b>Lista de Funcionários</b></h2>
+    <input type="button" value="Ordenar por Cpf" onclick="sortTable(0)">
+    <input type="button" value="Ordenar por Nome" onclick="sortTable(1)">
+    <input type="button" value="Ordenar por Salário" onclick="sortTable(3)">
+    Salário maior que: <input type="text" name="SalarioFiltro">
+    <input type="button" value="Filtrar" onclick="filtrar()">
+
+    </form>
+    
+    <table id="myTable" style="width:40%">
+        <tr>
+            <th>CPF</th>
+            <th>Nome</th>
+            <th>Cargo</th>
+            <th>Salário</th>
+            <th style="width:10%"></th>
+        </tr>
+    </table>
+      
+</body>
+
+
+
+</html>

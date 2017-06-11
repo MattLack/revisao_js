@@ -1,0 +1,65 @@
+<html>
+<!--
+    Aluno: Anderson Mateus
+-->
+
+<head>
+    <meta charset="utf-8" />
+    <script src="atv1webjs.js"></script>
+</head>
+
+<body>
+
+    <form action="atv1.html" method="post">
+    
+    <fieldset>
+
+        Nome: <input type="text" name="txtNome" /> 
+        Sexo: <input type="radio" name="sexo" value="masculino">M
+        <input type="radio" name="sexo" value="feminino">F
+
+        <br></br>
+        E-mail: <input type="text" name="txtEmail" />
+        <br></br>
+  
+    
+        Navegador preferido:
+        <select name="Browser">
+            <option value="">Browser</option>
+            <option value="chrome">Google Chrome</option>
+            <option value="edge">Microsoft Edge</option>
+            <option value="mozila">Mozila Firefox</option>
+            <option value="opera">Opera</option>
+        </select> 
+    
+        <br></br>
+        Esportes que aprecia:
+        <br></br>
+        <input type="checkbox" name="esportes" value="futebol"  /> futebol
+        <input type="checkbox"  name="esportes" value="basquete"  /> basquete
+        <input type="checkbox"  name="esportes" value="tênis"  /> tênis
+        <input type="checkbox"  name="esportes" value="volei"  /> volei
+        <input type="checkbox"  name="esportes" value="handebol"  /> handebol
+        <input type="checkbox"  name="esportes" value="nenhum" /> nenhum deles
+        <br></br>
+
+        Comentário sobre o esporte preferido:
+        <br></br>
+        <textarea name="esporte-preferido" rows="7" cols="61"></textarea>
+        <br></br>
+
+
+        <input type="button" name="Enviar" onclick="return validar()"></input>
+        <button onclick="limpar()">Limpar</button> 
+    
+       
+
+
+    </fieldset>
+
+    </form>
+</body>
+
+
+
+</html>
